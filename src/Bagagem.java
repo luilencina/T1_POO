@@ -1,3 +1,7 @@
+//  *********************** @author Luiza Lencina  ************************//
+//  **************** Matricula: 19201083 //  Digito: 3  ****************//
+
+
 public class Bagagem {
 
     // peso da bagagem
@@ -13,7 +17,6 @@ public class Bagagem {
     public Bagagem(double peso, String descr) {
     this.peso = peso;
     this.descricao = descr;
-
     }
 
     public double getPeso() {
@@ -37,22 +40,13 @@ public class Bagagem {
         this.prioridade = prioridade;
     }
 
-    protected double setPeso() {
-       return this.peso = peso;
+    public static double getTaxaBagagem() {
+        return TaxaBagagem;
     }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public static void setTaxaBagagem(double taxaBagagem) {
-        TaxaBagagem = taxaBagagem;
-    }
-
 
     @Override
-    public String toString() {
-        return super.toString();
+    public String toString(){
+        return String.format("Descricao: %s\nPeso: %.2f\nPrioridade: %s\nSeguro: %.2f",this.getDescricao(), this.getPeso(), this.getCusto());
     }
 
 }
