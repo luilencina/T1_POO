@@ -20,12 +20,14 @@ public class BagagemFragil extends Bagagem{
 
     public double getCusto() {
         // multiplier no 0 pq 0 * qualquer coisa == 0 :)
+        if(getPeso()<=20) return 0;
         int nMultiplier = 0;
         //ele pega a prioridade e refina no switch
         switch(getPrioridade()){
             //caso for normal 0 * qualquer coisa == 0 e vai ser apenas o valor do seguro
             case NORMAL:
                 nMultiplier = 0;
+                break;
             // se for PRIORITARIA o multiplier vai ser * 5
             case PRIORITARIA:
                 nMultiplier = 5;

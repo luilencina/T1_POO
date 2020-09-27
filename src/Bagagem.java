@@ -2,7 +2,7 @@
 //  **************** Matricula: 19201083 //  Digito: 3  ****************//
 
 
-public class Bagagem {
+public abstract class Bagagem {
 
     // peso da bagagem
     private double peso;
@@ -31,10 +31,7 @@ public class Bagagem {
         return prioridade;
     }
 
-    public double getCusto(){
-        if(peso < 5) return 0;
-        return Math.floor(peso-5)*(3*TaxaBagagem);
-    }
+    public abstract double getCusto();
 
     public void setPrioridade(Prioridade prioridade) {
         this.prioridade = prioridade;
@@ -45,8 +42,8 @@ public class Bagagem {
     }
 
     @Override
-    public String toString(){
-        return String.format("Descricao: %s\nPeso: %.2f\nPrioridade: %s\nSeguro: %.2f",this.getDescricao(), this.getPeso(), this.getCusto());
+    public String toString() {
+        return String.format("Descricao: %s\nPeso: %.2f\nCusto : %.2f",this.descricao, this.peso, this.getCusto());
     }
 
 }

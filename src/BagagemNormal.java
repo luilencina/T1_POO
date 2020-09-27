@@ -33,6 +33,6 @@ public class BagagemNormal extends Bagagem{
 
     @Override
     public String toString(){
-        return String.format("Descricao: %s\nPeso: %.2f\nPrioridade: %s\nSeguro: %.2f",this.getDescricao(), this.getPeso(), this.getPrioridade().name(), this.getCusto());
+        return String.format("Descricao: %s\nPeso: %.2f\nPrioridade: %s\nCusto: %.2f",getDescricao(), getPeso(), getPrioridade().name(), getCusto());
     }
 }
