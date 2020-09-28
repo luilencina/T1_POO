@@ -1,0 +1,23 @@
+//  ********************************* @author Luiza Lencina  *****************************************//
+//  **************************** Matricula: 19201083 //  Digito: 3  **********************************//
+
+
+***************  (2 pt) Responda suscintamente (explique/exemplifique suas respostas): *****************
+
+                         – neste diagrama pode ser observado polimorfismo?
+                  Sim, o polimorfismo é getCusto em todas as subClasses da Bagagem.
+
+                          – neste diagrama pode ser observado sobrecarga?
+                  Sobrecarga é quando existem 2 ou mais métodos com o mesmo nome,
+           que têm ou parametros diferentes, ou tipo de retorno diferentes, ou ambos diferentes.
+                            Portanto, no diagrama não eciste a sobrecarga.
+
+                          – neste diagrama pode ser observado sobrescrita?
+                   Sobrecrista é o @override, portanto o "ToString" e o "getCusto"
+
+                         – qual a implicação da classe Bagagem ser abstract?
+             A primeira é que não pode estancias um objeto da classe Bagagem, apenas das subclasses
+        e a outra é que todos os metodos abstratos da classe Bagagem tem que ser implementados nas subclasses.
+
+                          – qual a implicação do método getCusto ser abstract?
+           Ele é um metodo abstrato da classe bagagem entao ele tem que ser implementado nas subclasses.

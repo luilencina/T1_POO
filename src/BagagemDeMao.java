@@ -1,4 +1,7 @@
-    public class BagagemDeMao extends Bagagem{
+//  *********************** @author Luiza Lencina  ************************//
+//  **************** Matricula: 19201083 //  Digito: 3  ****************//
+
+public class BagagemDeMao extends Bagagem{
         private double custo;
 
         public BagagemDeMao(double peso, String descr, Prioridade prio) {

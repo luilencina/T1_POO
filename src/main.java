@@ -1,3 +1,7 @@
+//  *********************** @author Luiza Lencina  ************************//
+//  **************** Matricula: 19201083 //  Digito: 3  ****************//
+
+
 public class main {
     public static void main(String args[]){
         final ListaDeBagagens lb = new ListaDeBagagens();
